@@ -1,27 +1,32 @@
 /* W02-Task - Profile Home Page */
 
 /* Step 1 - Setup type tasks - no code required */
+    /* nothing to code */
 
 /* Step 2 - Variables */
-
-
-
+const fullName = "Katlin Denney";
+const currentYear = new Date().getFullYear();
+const profilePicture = "images/IMG_3051.jpeg";
 
 /* Step 3 - Element Variables */
+const nameElement = document.getElementById("name");
+const foodElement = document.getElementById("food");
+const yearElement = document.querySelector("#year");
 
-
-
-
-
+const imageElement = document.querySelector("#home").
+    children[0]. /* Picture element */
+        children[0]; /* img element */
+ 
 /* Step 4 - Adding Content */
-
-
-
+nameElement.innerHTML = `<strong>${fullName}</strong>`;
+yearElement.textContent = currentYear;
+imageElement.src = profilePicture;
 
 
 
 /* Step 5 - Array */
-
+let foodArray = ["watermelon","cucumber","fig","apricot"];
+foodElement.textContent = foodArray;
 
 
 
