@@ -27,8 +27,12 @@ imageElement.src = profilePicture;
 /* Step 5 - Array */
 let foodArray = ["watermelon","cucumber","fig","apricot"];
 foodElement.textContent = foodArray;
-
-
+foodArray.push("strawberry");
+foodElement.innerHTML += `<br>${foodArray}`;
+foodArray.shift();
+foodElement.innerHTML += `<br>${foodArray}`;
+foodArray.pop();
+foodElement.innerHTML += `<br>${foodArray}`;
 
 
 
