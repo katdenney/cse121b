@@ -12,16 +12,13 @@ const profilePicture = "images/IMG_3051.jpeg";
 const nameElement = document.getElementById("name");
 const foodElement = document.getElementById("food");
 const yearElement = document.querySelector("#year");
-
-const imageElement = document.querySelector("#home").
-    children[0]. /* Picture element */
-        children[0]; /* img element */
+const imageElement = document.querySelector("img");
  
 /* Step 4 - Adding Content */
 nameElement.innerHTML = `<strong>${fullName}</strong>`;
 yearElement.textContent = currentYear;
-imageElement.src = profilePicture;
-
+// imageElement.src = profilePicture;
+imageElement.setAttribute("src",profilePicture);
 
 
 /* Step 5 - Array */
